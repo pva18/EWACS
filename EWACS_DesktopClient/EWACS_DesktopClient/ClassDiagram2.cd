@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="OnlabClient.App">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <Members>
+      <Method Name="App" Hidden="true" />
+      <Property Name="LogDocumentPath" Hidden="true" />
+      <Property Name="UserDocumentPath" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAACAAABACAAAAQAAABAAACCA=</HashCode>
+      <FileName>App.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Serial" />
+      <Property Name="LogDoc" />
+      <Property Name="UserDoc" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OnlabClient.Document&lt;T&gt;">
+    <Position X="5.75" Y="1" Width="2.25" />
+    <Members>
+      <Method Name="readDocument" Hidden="true" />
+      <Field Name="syncObjectSave" Hidden="true" />
+      <Method Name="writeDocument" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAEQAQAAAAAAAAAAAAAAAAAAAgAAAAAABAAAA=</HashCode>
+      <FileName>Document.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OnlabClient.Log">
+    <Position X="0.5" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABACAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Log.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Uid" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OnlabClient.LogDocument" Collapsed="true">
+    <Position X="3.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LogDocument.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OnlabClient.RfidUid">
+    <Position X="5.75" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAgAAECIAAAEAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>RfidUid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OnlabClient.SerialHelper">
+    <Position X="8.5" Y="0.5" Width="2.5" />
+    <Members>
+      <Method Name="extractLog" Hidden="true" />
+      <Method Name="extractUser" Hidden="true" />
+      <Field Name="messageBuffer" Hidden="true" />
+      <Field Name="messageStarted" Hidden="true" />
+      <Property Name="PortName" Hidden="true" />
+      <Method Name="processMessage" Hidden="true" />
+      <Method Name="sendMessage" Hidden="true" />
+      <Method Name="serial_DataReceived" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IIEAAAAAAgAAARYgAAAAECAgAAAAAEAgBAAAAgAAAgA=</HashCode>
+      <FileName>SerialHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OnlabClient.User">
+    <Position X="3" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIBAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Uid" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OnlabClient.UserDocument" Collapsed="true">
+    <Position X="3.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserDocument.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
